@@ -13,10 +13,10 @@
     <h1>Halaman PHP Ajeng</h1>
 
     <?php 
-    $warna = "merah"; // Jika ini hijau maka akan menjalankan perintah case "hijau", jika kuning maka case "kuning"
+    $warna = "ungu"; // Jika ini hijau maka akan menjalankan perintah case "hijau", jika kuning maka case "kuning"
     switch ($warna) {
-        case "merah":
-            echo "warna adalah merah";
+        case "ungu":
+            echo "warna adalah ungu";
             break;
         case "kuning":
             echo "warna adalah kuning";
