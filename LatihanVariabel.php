@@ -13,33 +13,13 @@
     <h1>Halaman PHP Ajeng</h1>
 
     <?php
-function hariIndo ($hariInggris) {
-  switch ($hariInggris) {
-    case 'Sunday':
-      return 'Minggu';
-    case 'Monday':
-      return 'Senin';
-    case 'Tuesday':
-      return 'Selasa';
-    case 'Wednesday':
-      return 'Rabu';
-    case 'Thursday':
-      return 'Kamis';
-    case 'Friday':
-      return 'Jumat';
-    case 'Saturday':
-      return 'Sabtu';
-    default:
-      return 'hari tidak valid';
-  }
-}
+    // Membuat array yang berisi nama-nama hari
+    $hari = array("Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu");
 
-$hariBahasaInggris = array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
-foreach ($hariBahasaInggris as $hari) {
-  $hariBahasaIndonesia = hariIndo($hari);
-  echo "$hari <br>";
-  echo "Bahasa Indonesia: $hariBahasaIndonesia <br><br>";
-}
-?>
+    // Menampilkan nama hari menggunakan looping
+    foreach ($hari as $index => $nama) {
+        echo "Hari ke-" . ($index+1) . ": " . $nama . "<br>";
+    }
+    ?>
 </body>
 </html>
